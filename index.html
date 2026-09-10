@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сайт Ксении Елисеевой — что сделано</title>
+<meta name="description" content="Отчёт по работе над сайтом: 508 страниц, 137 картин, 19 предметов декора, 1 824 фотографии. Что собрано, что написано, что осталось до запуска.">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Сайт Ксении Елисеевой — что сделано">
+<meta property="og:description" content="508 страниц, 137 картин, 1 824 фотографии. Что собрано, что написано и что осталось до запуска.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Сайт Ксении Елисеевой — что сделано">
+<meta name="twitter:description" content="508 страниц, 137 картин, 1 824 фотографии. Что собрано и что осталось до запуска.">
+<meta name="twitter:image" content="img/og.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0c'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23a8763c' text-anchor='middle'%3EК%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#f4f3f1;
+  --ink:#17161a;
+  --void:#0a0a0c;
+  --mist:#e8e6e2;
+  --ash:#6f6c68;
+  --brass:#a8763c;
+  --line:rgba(23,22,26,.14);
+  --line-strong:rgba(23,22,26,.3);
+  --display:"Cormorant",Georgia,"Times New Roman",serif;
+  --sans:"Golos Text",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:17px;line-height:1.65;
+  font-feature-settings:"liga" 1;
+}
+.wrap{max-width:56rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.02em;line-height:1.08;margin:0}
+h1{font-size:clamp(2.1rem,7.2vw,5rem)}
+/* Длинное имя файла и адреса не должны растягивать страницу вбок:
+   с телефона она читается чаще, чем с монитора. */
+code{font-size:.88em;overflow-wrap:anywhere;word-break:break-word}
+p,li,td,th,figcaption{overflow-wrap:break-word}
+img{max-width:100%;height:auto}
+h2{font-size:clamp(1.9rem,5vw,3rem);margin:0 0 1.2rem}
+h3{font-size:clamp(1.3rem,3.4vw,1.8rem);margin:2.6rem 0 .9rem}
+p{margin:0 0 1.1rem}
+a{color:inherit}
+strong{font-weight:600}
+.num{font-family:var(--display);font-size:1.25em;font-weight:500;letter-spacing:-.01em}
+
+/* ---- шапка ---- */
+header.hero{background:var(--void);color:var(--mist);padding:5rem 0 4rem}
+header.hero .label{
+  font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ash);
+  margin:0 0 1.6rem
+}
+header.hero h1{color:var(--mist)}
+header.hero .lead{
+  font-family:var(--display);font-size:clamp(1.3rem,3.4vw,1.9rem);line-height:1.35;
+  color:var(--mist);max-width:34ch;margin:1.8rem 0 0;opacity:.86
+}
+.hero-figures{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1.6rem;
+  margin-top:3.2rem;padding-top:2rem;border-top:1px solid rgba(232,230,226,.16)
+}
+.hero-figures div{display:flex;flex-direction:column;gap:.3rem}
+.hero-figures b{font-family:var(--display);font-size:2.6rem;font-weight:400;color:var(--mist);line-height:1}
+.hero-figures span{font-size:.85rem;color:var(--ash);line-height:1.4}
+
+/* ---- оглавление ---- */
+nav.toc{border-bottom:1px solid var(--line);padding:1.4rem 0;background:var(--paper);
+  position:sticky;top:0;z-index:5;backdrop-filter:blur(6px)}
+nav.toc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 1.4rem}
+nav.toc a{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ash);text-decoration:none}
+nav.toc a:hover{color:var(--brass)}
+
+section{padding:4.2rem 0 1rem;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.section-label{
+  font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);
+  margin:0 0 .9rem
+}
+.intro{font-family:var(--display);font-size:clamp(1.15rem,2.6vw,1.5rem);line-height:1.45;
+  max-width:46ch;color:var(--ink);margin-bottom:2.4rem}
+
+/* ---- карточки цифр ---- */
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);margin:1.8rem 0 2.4rem}
+.figures div{background:var(--paper);padding:1.3rem 1.2rem}
+.figures b{display:block;font-family:var(--display);font-size:2.1rem;font-weight:400;line-height:1;margin-bottom:.45rem}
+.figures span{font-size:.9rem;color:var(--ash);line-height:1.45}
+
+/* ---- списки фактов ---- */
+ul.facts{list-style:none;margin:0 0 1.8rem;padding:0}
+ul.facts li{padding:.85rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline}
+ul.facts li:first-child{border-top:1px solid var(--line)}
+ul.facts .k{flex:0 0 7.5rem;font-family:var(--display);font-size:1.5rem;line-height:1.1}
+ul.facts .v{flex:1;min-width:0;font-size:.98rem;line-height:1.5}
+@media(max-width:34rem){
+  ul.facts li{flex-direction:column;gap:.25rem}
+  ul.facts .k{flex:none}
+}
+
+table{width:100%;table-layout:fixed;border-collapse:collapse;margin:0 0 2rem;font-size:.95rem}
+th,td{text-align:left;padding:.7rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ash);font-weight:500}
+/* Ровные колонки от table-layout режут название источника пополам, а оно
+   короче содержимого: отдаём ему меньшую долю. */
+th:first-child{width:36%}
+td.n{font-family:var(--display);font-size:1.25rem;white-space:nowrap;width:4.5rem}
+.serp{max-width:100%}
+.serp .url{overflow-wrap:anywhere}
+
+.note{border-left:2px solid var(--brass);padding:.2rem 0 .2rem 1.1rem;margin:1.8rem 0;
+  color:var(--ink);font-size:.98rem}
+.note b{font-weight:600}
+
+/* ---- пример выдачи ---- */
+.serp{background:#fff;border:1px solid var(--line);padding:1.4rem;margin:1.6rem 0 2.2rem;
+  font-family:var(--sans);max-width:38rem}
+.serp .url{font-size:.8rem;color:#3a7d3a;margin-bottom:.3rem}
+.serp .t{font-size:1.15rem;color:#1a0dab;line-height:1.3;margin-bottom:.35rem}
+.serp .d{font-size:.92rem;color:#4d5156;line-height:1.5}
+.serp + .caption{margin-top:-1.4rem}
+
+.caption{font-size:.85rem;color:var(--ash);margin:.6rem 0 2rem;line-height:1.5}
+
+/* ---- скриншоты ---- */
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.4rem;margin:2rem 0}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.shots figcaption{font-size:.82rem;color:var(--ash);margin-top:.5rem}
+.shots.phones{grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));max-width:34rem}
+
+/* ---- вопросы ---- */
+.q{border-top:1px solid var(--line);padding:1.6rem 0}
+.q:last-of-type{border-bottom:1px solid var(--line)}
+.q h3{margin:0 0 .5rem;font-size:1.25rem}
+.q p{font-size:.95rem;color:var(--ash);margin-bottom:.8rem}
+textarea{
+  width:100%;min-height:4.2rem;padding:.75rem .85rem;font-family:var(--sans);font-size:1rem;
+  line-height:1.5;color:var(--ink);background:#fff;border:1px solid var(--line-strong);
+  border-radius:2px;resize:vertical
+}
+textarea:focus{outline:2px solid var(--brass);outline-offset:2px;border-color:var(--brass)}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin:2rem 0 1rem}
+button,.btn{
+  font-family:var(--sans);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:.95rem 1.5rem;border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+  cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;
+  transition:background .2s ease,color .2s ease
+}
+button.ghost,.btn.ghost{background:transparent;color:var(--ink)}
+button:hover,.btn:hover{background:var(--brass);border-color:var(--brass);color:#fff}
+.status{font-size:.9rem;color:var(--brass);min-height:1.5rem;margin:0 0 1rem}
+
+footer{background:var(--void);color:var(--ash);padding:3rem 0;margin-top:4rem;font-size:.9rem}
+footer a{color:var(--mist)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="label">Отчёт по работе · 10 сентября 2026</p>
+    <h1>Сайт Ксении&nbsp;Елисеевой</h1>
+    <p class="lead">Что собрано, что написано, что уже стоит на сайте и что осталось до запуска.</p>
+    <div class="hero-figures">
+      <div><b>508</b><span>страниц собрано, половина на английском</span></div>
+      <div><b>137</b><span>картин в каталоге и 19 предметов декора</span></div>
+      <div><b>1 824</b><span>фотографии разобраны и подписаны</span></div>
+      <div><b>46 304</b><span>слова текстов написано заново, на двух языках</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <ul>
+      <li><a href="#podgotovka">Подготовка</a></li>
+      <li><a href="#spros">Спрос</a></li>
+      <li><a href="#sajt">Что на сайте</a></li>
+      <li><a href="#poisk">Для поиска</a></li>
+      <li><a href="#kak">Как делали</a></li>
+      <li><a href="#dalshe">Что дальше</a></li>
+      <li><a href="#voprosy">Вопросы к вам</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============================ БЛОК 1 ============================ -->
+<section id="podgotovka">
+  <div class="wrap">
+    <p class="section-label">Блок 1</p>
+    <h2>Подготовительная работа</h2>
+    <p class="intro">То, чего на сайте не видно, но без чего его бы не было. Здесь ничего не придумано: всё собрано из ваших же материалов.</p>
+
+    <h3>Откуда брали</h3>
+    <p>Работа началась не с вёрстки, а со сбора. Ваша жизнь в интернете была разложена по семи местам, и каждое пришлось забирать отдельно.</p>
+
+    <table>
+      <thead><tr><th>Источник</th><th>Что взяли</th></tr></thead>
+      <tbody>
+        <tr><td><strong>make-air.com</strong>, старый сайт на Tilda</td><td>каталог работ, цены, разметка страниц. Разобрана страница целиком, 492 КБ кода</td></tr>
+        <tr><td><strong>makeair-interior.com</strong>, второй сайт на WordPress</td><td>175 карточек работ, 64 записи блога за 2016–2026, 15 страниц, 1 933 фотографии</td></tr>
+        <tr><td>Отрендеренные страницы портфолио</td><td>тело карточек. Обычной выгрузкой оно не отдаётся, пришлось открывать страницы браузером</td></tr>
+        <tr><td><strong>Instagram</strong>, три аккаунта</td><td>172 фрагмента вашей речи: 35 из галереи, 70 из школы, 67 из терапии</td></tr>
+        <tr><td><strong>Reels</strong></td><td>137 расшифровок. Устную речь никакая нейросеть не пишет: в ней остаются оговорки и настоящий ритм фразы</td></tr>
+        <tr><td><strong>ВКонтакте</strong></td><td>публикации, забраны управляемым браузером — открытого доступа там нет</td></tr>
+        <tr><td><strong>Яндекс.Карты</strong></td><td>карточка мастерской: адрес, часы, оценка 5,0 при 114 отзывах</td></tr>
+        <tr><td><strong>OpenStreetMap</strong></td><td>663 элемента карты квартала — из них нарисован план вокруг мастерской</td></tr>
+        <tr><td><strong>Яндекс.Вордстат</strong> и подсказки <strong>Google</strong> с <strong>Bing</strong></td><td>спрос: по каким словам вас ищут в России и за рубежом</td></tr>
+        <tr><td><strong>KIE.AI</strong></td><td>музыка для сайта и кастинг голосов для озвучки</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Два сайта сведены в один каталог</h3>
+    <ul class="facts">
+      <li><span class="k">41</span><span class="v">скрипт написан для сбора и сборки данных, <strong>6 681 строка кода</strong>. Семь из них — парсеры: каждый источник забирается по-своему</span></li>
+      <li><span class="k">121</span><span class="v">повтор отброшен перцептивным хэшем: один и тот же снимок в другой обработке машина узнаёт, глазами это искать неделю</span></li>
+      <li><span class="k">40</span><span class="v">работ влито со второго сайта — их не было на Tilda вовсе. Было сто, стало сто сорок</span></li>
+      <li><span class="k">117</span><span class="v">цен сверено по двум источникам. Где источники расходились, бралась большая — по вашему решению</span></li>
+    </ul>
+
+    <h3>Собрали ваш голос</h3>
+    <p>Чтобы тексты на сайте звучали как вы, а не как нейросеть, сначала был собран эталон — ваша настоящая речь.</p>
+    <ul class="facts">
+      <li><span class="k">219</span><span class="v">фрагментов живой речи: 172 из соцсетей и 47 с сайта, вместе <strong>7 376 слов</strong></span></li>
+      <li><span class="k">137</span><span class="v">расшифровок Reels. По ним выставлялась длина фразы, паузы и любимые обороты</span></li>
+      <li><span class="k">10</span><span class="v">ваших цитат отобрано на экраны-паузы взамен Пикассо, Юнга, Нин и да Винчи. У каждой проверен источник, три отклонены как неподтверждённые</span></li>
+    </ul>
+
+    <h3>Разобрали фотографии</h3>
+    <ul class="facts">
+      <li><span class="k">1 955</span><span class="v">оригиналов выкачано в рабочий кеш, <strong>3,65 ГБ</strong></span></li>
+      <li><span class="k">279</span><span class="v">кадров размечено глазами по ролям: интерьер или фактура. Машинного признака, отличающего рендер комнаты от макро мазка, не существует</span></li>
+      <li><span class="k">12</span><span class="v">фотографий декора со стрелками и размерами отодвинуты с обложек: у девяти предметов из девятнадцати такой чертёж стоял первым</span></li>
+      <li><span class="k">428</span><span class="v">кадров переделано отдельно: сборка пропускала ступень в натуральную величину, и половина каталога уезжала на экран мылом</span></li>
+    </ul>
+
+    <h3>Собрали документацию</h3>
+    <p><span class="num">52</span> ноты, <span class="num">14 179</span> строк, <span class="num">47</span> записанных решений с объяснением, почему сделано именно так. Это нужно, чтобы следующий человек не переоткрывал заново то, что уже разобрано.</p>
+  </div>
+</section>
+
+<!-- ============================ СПРОС ============================ -->
+<section id="spros">
+  <div class="wrap">
+    <p class="section-label">Блок 1, продолжение</p>
+    <h2>Спрос: по каким словам вас ищут</h2>
+    <p class="intro">Прежде чем писать заголовки, был собран рынок. Отдельно русский, отдельно английский — механика поиска в них разная.</p>
+
+    <div class="figures">
+      <div><b>7 687</b><span>фраз русского ядра, собрано по 72 опорным запросам в Яндекс.Вордстате</span></div>
+      <div><b>1 062 946</b><span>показов в месяц по этим фразам, без двойного счёта</span></div>
+      <div><b>5 026</b><span>английских фраз из подсказок Google и Bing, 242 подтверждены обоими</span></div>
+      <div><b>113 311</b><span>показов отброшено как чужой рынок: раскраски по номерам и алмазная мозаика</span></div>
+    </div>
+
+    <h3>Что показал разбор</h3>
+    <p><strong>Сайт был написан словами, которых не набирают.</strong> Ваша техника называется «рельефная живопись» и «фактурная живопись» — 229 и 351 показ в месяц. Тот же товар рынок ищет как «объёмные картины» (10 861) и «текстурная картина» (6 224). Разрыв тридцатикратный.</p>
+    <p>Ваш словарь не меняли: он ваш, и в текстах он остался. Но в заголовках, описаниях и подписях к фотографиям теперь стоят оба слова сразу.</p>
+
+    <p><strong>Люди ищут не картину вообще, а картину в комнату.</strong> «Картина в гостиную», «над диваном», «в спальню» — кластер на 328 000 показов в месяц. Под него сделаны отдельные страницы, и по ним же названы файлы фотографий.</p>
+
+    <p><strong>Английский покупатель ищет автора, а русский — картину.</strong> В английском ядре из 422 фраз про автора 367 денежные: «buy directly from artist», «commission a painting». Русское ядро так не устроено. Поэтому английская версия построена вокруг вас, а не только вокруг каталога.</p>
+
+    <p><strong>Эпоксидная смола подтвердилась</strong> — 15 714 показов в месяц, рост к прошлому году +36%. Раздел сделан.</p>
+
+    <div class="note">
+      <b>Честно о цифрах.</b> Вордстат считает показы, а не переходы. Верхние фразы вроде «картины купить» (171 162 показа) заняты маркетплейсами, и новый сайт там сразу не встанет. Реальная цель — средний хвост: сюжет плюс комната плюс техника, где конкуренция состоит из таких же авторских сайтов.
+    </div>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 2 ============================ -->
+<section id="sajt">
+  <div class="wrap">
+    <p class="section-label">Блок 2</p>
+    <h2>Что уже стоит на сайте</h2>
+
+    <h3>Объём</h3>
+    <table>
+      <tbody>
+        <tr><td class="n">508</td><td>страниц: 252 русских и 252 английских, плюс служебные</td></tr>
+        <tr><td class="n">137</td><td>картин показывается в каталоге, всего в базе 140 записей</td></tr>
+        <tr><td class="n">19</td><td>предметов декора: зеркала, вазы, арт-объекты</td></tr>
+        <tr><td class="n">60</td><td>записей журнала, с 2016 по 2026 год</td></tr>
+        <tr><td class="n">25</td><td>разделов каталога: 20 подборок, из них 8 — по комнатам, и 5 авторских серий</td></tr>
+        <tr><td class="n">5</td><td>авторских серий: «Смыслы», «Рыбы в космосе», «Море», «Радужные вибрации», «Суеверная продукция»</td></tr>
+        <tr><td class="n">9</td><td>выставок с 2016 года и 2 награды — собраны из выгрузки, ничего не дописано от себя</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Тексты</h3>
+    <table>
+      <thead><tr><th>Что</th><th>Русский</th><th>Английский</th></tr></thead>
+      <tbody>
+        <tr><td>Текстов о работах</td><td><strong>158</strong>, 21 632 слова</td><td><strong>140</strong>, 24 672 слова</td></tr>
+        <tr><td>Описаний декора</td><td>19 из 19</td><td>19 из 19</td></tr>
+        <tr><td>Записей журнала</td><td>60</td><td>60</td></tr>
+        <tr><td>Словарь терминов каталога</td><td>исходник</td><td>483 термина</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Английская версия — не перевод, а отдельный текст тем же голосом.</strong> Со старого сайта не скопировано ничего: там тексты писала машина, и они уже проиндексированы. Дословный перенос столкнул бы два ваших сайта в выдаче — поисковик считает это дублем и оставляет один. Взяли только фактуру: что на холсте, размер, техника. Совпадение со старым английским — <strong>1,69%</strong>, и это названия работ.</p>
+
+    <p>Все тексты идут <strong>от первого лица</strong>: сайт целиком ваша прямая речь. Проставлено <strong>140 английских названий</strong> — на втором сайте их нет вовсе.</p>
+
+    <div class="note">
+      <b>Описания декора переписаны 10 сентября.</b> Семнадцать текстов приезжали переводом со второго сайта и были написаны машиной: «композиция балансирует между археологией формы и современным минимализмом». Теперь у всех девятнадцати предметов текст написан по фотографиям вашим голосом, на двух языках.
+    </div>
+
+    <h3>Фотографии</h3>
+    <ul class="facts">
+      <li><span class="k">1 824</span><span class="v">кадра, у <strong>1 804</strong> проставлена подпись. Её читает поиск и программа для незрячих</span></li>
+      <li><span class="k">5 661</span><span class="v">файл: тот же кадр нарезан под разные экраны, чтобы телефон не грузил картинку для монитора</span></li>
+      <li><span class="k">5 540</span><span class="v">файлов переименовано под поиск. Было <code>0-1680.webp</code>, стало <code>ksenia-eliseeva-vechnyj-rost-kartina-v-gostinuyu-0-1680.webp</code>. Имя файла Яндекс читает как один из сигналов; сделано до запуска, поэтому не стоило ни одного редиректа</span></li>
+      <li><span class="k">127</span><span class="v">превью в JPEG — чтобы ссылка на работу разворачивалась картинкой во ВКонтакте, Telegram и Pinterest</span></li>
+      <li><span class="k">16</span><span class="v">диптихов размечены как многочастные: показываются парой, а не двумя карточками</span></li>
+      <li><span class="k">140</span><span class="v">палитр просчитано по каждой работе. От них меняется цвет среды вокруг картины на странице</span></li>
+    </ul>
+
+    <p>Формат кадров — <strong>WebP</strong>. Его индексируют Яндекс.Картинки; более лёгкий AVIF в выдаче не встречается вовсе. Замеряли руками: 880 адресов картинок из выдачи, WebP — 38 с девятнадцати разных сайтов, AVIF — ноль.</p>
+
+    <h3>Как это выглядит</h3>
+    <div class="shots">
+      <figure><img src="img/glavnaya.jpg" alt="Первый экран сайта" loading="lazy"><figcaption>Первый экран</figcaption></figure>
+      <figure><img src="img/rabota.jpg" alt="Страница картины" loading="lazy"><figcaption>Страница работы: кадр, формуляр, ваш текст</figcaption></figure>
+      <figure><img src="img/katalog.jpg" alt="Каталог работ" loading="lazy"><figcaption>Каталог</figcaption></figure>
+      <figure><img src="img/rabota-en.jpg" alt="Английская версия страницы работы" loading="lazy"><figcaption>Та же работа по-английски</figcaption></figure>
+      <figure><img src="img/dekor.jpg" alt="Витрина декора" loading="lazy"><figcaption>Декор</figcaption></figure>
+      <figure><img src="img/dekor-predmet.jpg" alt="Страница предмета декора" loading="lazy"><figcaption>Предмет декора с новым текстом</figcaption></figure>
+      <figure><img src="img/zhurnal.jpg" alt="Журнал" loading="lazy"><figcaption>Журнал, 60 записей</figcaption></figure>
+      <figure><img src="img/masterskaya.jpg" alt="Страница мастерской" loading="lazy"><figcaption>Мастерская: адрес, часы, оценка из Яндекс.Карт</figcaption></figure>
+      <figure><img src="img/ob-avtore.jpg" alt="Страница об авторе" loading="lazy"><figcaption>Об авторе</figcaption></figure>
+    </div>
+
+    <p class="caption">С телефона сайт выглядит так — на нём его и будут смотреть чаще всего:</p>
+    <div class="shots phones">
+      <figure><img src="img/telefon-glavnaya.jpg" alt="Главная на телефоне" loading="lazy"><figcaption>Главная</figcaption></figure>
+      <figure><img src="img/telefon-katalog.jpg" alt="Каталог на телефоне" loading="lazy"><figcaption>Каталог</figcaption></figure>
+      <figure><img src="img/telefon-dekor.jpg" alt="Декор на телефоне" loading="lazy"><figcaption>Декор</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ПОИСК ============================ -->
+<section id="poisk">
+  <div class="wrap">
+    <p class="section-label">Блок 2, главное</p>
+    <h2>Что сделано для поиска</h2>
+    <p class="intro">Красивый сайт, которого не находят, стоит ровно столько, сколько стоит визитка в ящике стола. Поэтому эта часть — самая большая.</p>
+
+    <h3>Заголовок и описание у каждой из 508 страниц</h3>
+    <p>Это то, что человек видит в выдаче: синяя ссылка и две строки под ней. Вот настоящая страница «Вечного роста» так, как её увидят в Яндексе:</p>
+
+    <div class="serp">
+      <div class="url">make-air.com › works › eternal-growth</div>
+      <div class="t">Вечный рост, объёмная картина — Ксения Елисеева</div>
+      <div class="d">«Вечный рост» — горы здесь набраны слоями. Вершина, за ней вторая, за ней третья, и так до верхнего края.</div>
+    </div>
+    <p class="caption">Заголовок держит слово «объёмная картина» — то, что набирают. Описание — первая фраза вашего текста, а не строка формуляра.</p>
+
+    <h3>Остальное</h3>
+    <ul class="facts">
+      <li><span class="k">504</span><span class="v">адреса в карте сайта, <strong>1 512</strong> языковых связок. По ней поисковик обходит сайт, а не бродит наугад</span></li>
+      <li><span class="k">1 136</span><span class="v">редиректов со старых сайтов подготовлено: ни одна ссылка из поиска, визитки или переписки не упрётся в пустую страницу</span></li>
+      <li><span class="k">18</span><span class="v">ваших площадок связаны между собой разметкой: четыре Instagram, три Telegram, две группы ВКонтакте, Pinterest, YouTube, Behance, Ozon, Ярмарка мастеров, две галереи, Яндекс.Карты, второй сайт. Пока они не связаны, для поиска это разные однофамилицы</span></li>
+      <li><span class="k">22</span><span class="v">поисковых робота пущены поимённо: ChatGPT, Claude, Perplexity, Google, Bing, Яндекс с Нейро, GigaChat, SberBot, Mail.ru, DuckDuckGo, Apple, You.com, Petal</span></li>
+      <li><span class="k">19</span><span class="v">обучающих роботов пущены к тексту, но <strong>не к изображениям работ</strong>: читать про вас можно, обучаться на ваших картинах нельзя</span></li>
+      <li><span class="k">4</span><span class="v">файла для ИИ-поисковиков, по два на язык: краткая карточка сайта и полный каталог с текстами. Обычный сайт нейросеть читает как получится, эти файлы дают ей готовый ответ</span></li>
+      <li><span class="k">·</span><span class="v"><strong>Проверка после каждой выкладки.</strong> Она берёт список страниц из карты сайта и обходит по образцу из каждого раздела, поэтому раздел, добавленный ночью, проверяется наутро сам, без правки скрипта</span></li>
+    </ul>
+
+    <p><strong>Разметка Schema.org</strong> проставлена по всему сайту: художник, сайт, произведение с ценой, статья журнала, галерея с часами и координатами, вопросы-ответы, хлебные крошки. Из неё поиск собирает расширенный сниппет — цену и картинку прямо в выдаче.</p>
+  </div>
+</section>
+
+<!-- ============================ КАК ДЕЛАЛИ ============================ -->
+<section id="kak">
+  <div class="wrap">
+    <p class="section-label">Блок 2, изнутри</p>
+    <h2>Как это делалось</h2>
+    <p class="intro">Короткий ответ на вопрос «а почему так долго». Каждое направление копалось до конца, а не до первого правдоподобного результата.</p>
+
+    <h3>Слова подбирались, а не переводились</h3>
+    <p>Сначала собран эталон вашей речи, потом по нему написан каждый текст, потом каждый текст замерен: длина, длинные тире, запрещённые обороты, повторы предложений между текстами. Тексты, не прошедшие замер, переписывались. Для описаний декора замер вышел такой: 119–133 слова при норме, по одному длинному тире на текст, ноль «словно» и «будто», ноль повторяющихся фраз между семнадцатью текстами.</p>
+
+    <h3>Стиль собран из ваших работ</h3>
+    <p>Сайт не красится в фирменные цвета — их у него нет. <strong>Для каждой из 140 работ просчитана палитра</strong>, и среда страницы меняется вслед за картиной: тёмная работа затемняет экран, золотая делает его тёплым. Движение на сайте пружинное, а не по таймеру: страница ведёт себя как физический предмет, а не как слайд-шоу.</p>
+
+    <h3>Музыка и голос</h3>
+    <p><strong>Инструментальная музыка написана специально для сайта</strong> — трек Depth, 3:27, играет по кругу; второй, Breath, сгенерирован и лежит в запасе. Для озвучки первого экрана проведён кастинг: <strong>восемь женских голосов</strong> на русском и английском, с описанием сцены — тихая галерея, приглушённый свет, живой человек, а не диктор. Демо собрано отдельной страницей, чтобы выбрать голос на слух.</p>
+
+    <h3>Инструменты под задачу</h3>
+    <ul class="facts">
+      <li><span class="k">41</span><span class="v">скрипт: сбор данных, слияние двух баз, сборка кадров, палитры, карта квартала, музыка, проверки после выкладки</span></li>
+      <li><span class="k">21</span><span class="v">готовая рабочая процедура: сборка новой страницы, приёмка вёрстки, аудит поиска, переезд со старого сайта, предзапусковая проверка. Плюс четыре узких помощника — по вёрстке секций, по анимации, по поиску и по документации</span></li>
+      <li><span class="k">182</span><span class="v">файла кода, <strong>17 597 строк</strong>, 61 собственный компонент интерфейса</span></li>
+      <li><span class="k">52</span><span class="v">ноты документации, чтобы работа не зависела от памяти одного человека</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 3 ============================ -->
+<section id="dalshe">
+  <div class="wrap">
+    <p class="section-label">Блок 3</p>
+    <h2>Что дальше</h2>
+
+    <h3>Четыре вещи, без которых работа стоит</h3>
+    <ul class="facts">
+      <li><span class="k">1</span><span class="v"><strong>Домен.</strong> Купить и дать доступ к настройкам. <strong>Зона .ru не подходит</strong>: Google привязывает её к России, и английская версия вместе с зарубежным покупателем теряется. Нужен <code>.com</code>, <code>.art</code> или <code>.gallery</code></span></li>
+      <li><span class="k">2</span><span class="v"><strong>Номер счётчика Яндекс.Метрики.</strong> Без него не видно ни одного обращения: кнопки ведут в мессенджеры напрямую</span></li>
+      <li><span class="k">3</span><span class="v"><strong>Доступ к двум старым сайтам</strong> — Tilda и WordPress. Это включает 1 136 редиректов, то есть сохраняет всё, что старые адреса накопили за годы</span></li>
+      <li><span class="k">4</span><span class="v"><strong>Ключ приложения ВКонтакте</strong> — чтобы забирать оттуда публикации нормально, а не управляемым браузером</span></li>
+    </ul>
+
+    <h3>После домена — подключение к поисковикам</h3>
+    <p>Сейчас сайт закрыт от индексации целиком, и это сделано намеренно: пока адрес служебный, попадание в индекс создало бы дубль. Открывается одной правкой в день запуска.</p>
+    <ul class="facts">
+      <li><span class="k">·</span><span class="v">Яндекс.Вебмастер: подтвердить права, подать карту сайта, включить быстрое оповещение об изменениях</span></li>
+      <li><span class="k">·</span><span class="v">Google Search Console: то же самое</span></li>
+      <li><span class="k">·</span><span class="v">Яндекс.Метрика и GA4 — две разные системы, ставятся обе: первая даёт записи визитов и карту кликов, вторая сводит источники трафика</span></li>
+      <li><span class="k">·</span><span class="v">Замер позиций и скорости по живому адресу</span></li>
+    </ul>
+
+    <h3>Карточки и справочники — вечер работы руками</h3>
+    <p>Яндекс.Бизнес (забрать права на существующую карточку — 5,0 при 114 отзывах; вторую не создавать, дубль делит отзывы), ответы на отзывы в Яндекс.Картах, OpenStreetMap (из него берут данные карты Apple), 2ГИС, Bing Places, Wikidata. Поля для всех сервисов уже подготовлены дословно.</p>
+
+    <div class="note">
+      <b>Сроки диктует календарь, а не мы.</b> Пик спроса на картины — октябрь и ноябрь, провал — май и июнь. Странице нужно два-три месяца, чтобы собрать позиции: поданная в ноябре к своему сезону не успевает.
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ВОПРОСЫ ============================ -->
+<section id="voprosy">
+  <div class="wrap">
+    <p class="section-label">Нужен ваш ответ</p>
+    <h2>Восемь вопросов</h2>
+    <p class="intro">Ответьте прямо здесь — в полях. Внизу одна кнопка: она соберёт всё написанное в одно сообщение и отправит его. Ответы сохраняются в браузере, можно закрыть страницу и вернуться.</p>
+
+    <form id="form">
+      <div class="q">
+        <h3>1. Домен</h3>
+        <p>Какой адрес выбрали? Напомним: <strong>не .ru</strong> — иначе английская версия теряет зарубежного покупателя.</p>
+        <textarea name="Домен" placeholder="например, make-air.art"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>2. Счётчик Яндекс.Метрики</h3>
+        <p>Номер счётчика. Если счётчика нет — так и напишите, заведём.</p>
+        <textarea name="Счётчик Метрики" placeholder="номер или «нет»"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>3. Две «В ритме будущего»</h3>
+        <p>Это разные картины: женское лицо в породе и пара у бассейна. Совпадают только название, размер 110 × 90 и цена. Сейчас первая спрятана как дубль. Показывать обе и дать второй своё название — или оставить как есть?</p>
+        <textarea name="Две «В ритме будущего»" placeholder="показать обе / оставить / новое название для второй"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>4. Диаметр зеркала «Йони — Ракушка»</h3>
+        <p>Размера нет ни в одной выгрузке, а покупателю он нужен первым делом.</p>
+        <textarea name="Размер «Йони — Ракушка»" placeholder="например, 60 см"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>5. Пятьдесят три адреса «Товар для художников»</h3>
+        <p>Со старой Tilda осталось 53 адреса раздела материалов. Куда их вести: в новый раздел материалов на сайте, на Ozon или никуда?</p>
+        <textarea name="Товар для художников" placeholder="новый раздел / Ozon / никуда"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>6. Фотографии мастерской</h3>
+        <p>Нужен интерьер, а не только работы: сама мастерская, стол, инструменты, стены. Есть готовые снимки или снимаем?</p>
+        <textarea name="Фотографии мастерской" placeholder="есть / нужно снять"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>7. Съёмка в детской</h3>
+        <p>Отложена. Пока подборка «картина в детскую» показывает работы в гостиной. Планируем съёмку?</p>
+        <textarea name="Съёмка в детской" placeholder="да / нет / позже"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>8. Трафареты</h3>
+        <p>Подходят ли ваши трафареты для стен и декоративной штукатурки? Если да — рынок больше в пять раз, и раздел материалов пишется иначе.</p>
+        <textarea name="Трафареты" placeholder="да / только для аэрографии"></textarea>
+      </div>
+
+      <div class="q">
+        <h3>Что-то ещё</h3>
+        <p>Замечания по сайту, пожелания, что поправить.</p>
+        <textarea name="Ещё" placeholder="свободно"></textarea>
+      </div>
+    </form>
+
+    <div class="actions">
+      <button type="button" id="send">Отправить ответы в Telegram</button>
+      <button type="button" class="ghost" id="copy">Скопировать текстом</button>
+    </div>
+    <p class="status" id="status"></p>
+    <p class="caption">Кнопка открывает Telegram с уже готовым сообщением — останется нажать «отправить». Если Telegram не откроется, нажмите «Скопировать текстом» и вставьте ответ в любой мессенджер.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Отчёт по состоянию на 10 сентября 2026 года. Все цифры проверены по данным проекта.</p>
+    <p>Превью сайта: <a href="https://make-air.vercel.app">make-air.vercel.app</a> — служебный адрес, закрыт от поиска до покупки домена.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var KEY = 'make-air-report-answers';
+  var form = document.getElementById('form');
+  var status = document.getElementById('status');
+  var fields = Array.prototype.slice.call(form.querySelectorAll('textarea'));
+
+  // Черновик переживает закрытую вкладку: отвечать можно в несколько заходов.
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+    fields.forEach(function (field) {
+      if (saved[field.name]) field.value = saved[field.name];
+    });
+  } catch (e) {}
+
+  function save() {
+    var data = {};
+    fields.forEach(function (field) { data[field.name] = field.value; });
+    try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {}
+  }
+  fields.forEach(function (field) { field.addEventListener('input', save); });
+
+  function collect() {
+    var lines = ['Ответы Ксении по сайту, ' + new Date().toLocaleDateString('ru-RU'), ''];
+    var filled = 0;
+    fields.forEach(function (field) {
+      var value = field.value.trim();
+      if (!value) return;
+      filled += 1;
+      lines.push(field.name + ': ' + value);
+    });
+    return { text: lines.join('\n'), filled: filled };
+  }
+
+  function say(message) { status.textContent = message; }
+
+  document.getElementById('send').addEventListener('click', function () {
+    var answers = collect();
+    if (!answers.filled) { say('Сначала ответьте хотя бы на один вопрос.'); return; }
+    var encoded = encodeURIComponent(answers.text);
+    // Длинная ссылка обрывается на стороне Telegram: тогда честнее отдать буфер.
+    if (encoded.length > 3500) {
+      copyText(answers.text);
+      say('Ответов много, они скопированы — вставьте их в Telegram сообщением.');
+      return;
+    }
+    window.open('https://t.me/vH220?text=' + encoded, '_blank', 'noopener');
+    say('Telegram открыт, сообщение готово — осталось отправить.');
+  });
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(fallback);
+    } else {
+      fallback();
+    }
+    function fallback() {
+      var area = document.createElement('textarea');
+      area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
+      document.body.appendChild(area);
+      area.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(area);
+    }
+  }
+
+  document.getElementById('copy').addEventListener('click', function () {
+    var answers = collect();
+    if (!answers.filled) { say('Пока отвечать нечего — поля пустые.'); return; }
+    copyText(answers.text);
+    say('Скопировано. Вставьте в любой мессенджер.');
+  });
+})();
+</script>
+
+</body>
+</html>
